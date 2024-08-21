@@ -1,89 +1,150 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  @font-face {
-    font-family: Josefin;
-    src: url(../fonts/JosefinSans-Italic-VariableFont_wght.ttf);
-  }
-  @font-face {
-    font-family: Josefin2;
-    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
-  }
-  body {
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.395) rgba(255, 255, 255, 0.395),
-      url(../images/Coffee\ espresso\ template1.jpg)
-    );
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: Josefin2;
-    color: rgb(75, 38, 20);
-  }
-  /* Nav */
-  nav {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Josefin;
+  src: url(./fonts/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Josefin2;
+  src: url(./fonts/JosefinSans-VariableFont_wght.ttf);
+}
+body {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.395) rgba(255, 255, 255, 0.395),
+    url(./assets/images/Coffee\ espresso\ template1.jpg)
+  );
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Josefin2;
+  color: rgb(75, 38, 20);
+}
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Logo img {
+  width: 80px;
+  height: 80px;
+  padding-left: 40px;
+}
+.ancor-tags {
+  margin-top: 20px;
+  padding-right: 60px;
+}
+.ancor-tags a {
+  color: rgb(75, 38, 20);
+  background-color: ☐ #ffffff6b;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 20px;
+}
+
+/* Home */
+
+.home {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+  .home-heading {
+    padding: 150px 70px;
+    font-size: large;
+    font-family: Josefin;
+  }
+  .home-heading h1 {
+    font-size: 45px;
+  }
+  h1 em {
+    font-size: 60px;
+    font-style: normal;
+  }
+  .home-heading p {
+    padding: 5px 0;
+  }
+  .home-heading button {
+    color: rgb(75, 38, 20);
+    border: 1px solid ☐ rgb(75, 38, 20);
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: 15px;
+    border-radius: 5px;
   }
   
+  .offer {
+    margin-top: -90px;
+    margin-left: -100px;
+  }
+  .offer img {
+    width: 400px;
+  }
+  .home-image {
+    width: 400px;
+  }
+  .home-image {
+    position: relative;
+    animation: move 1s both;
+  }
+  @keyframes move {
+    from {
+      right: 0;
+    }
+    to {
+      right: 100px;
+    }
+  }
+  
+
+/* Small 1000px */
+@media (max-width: 1000px) {
   #Logo img {
-    width: 80px;
-    height: 80px;
-    padding-left: 40px;
+    width: 70px;
+    height: 70px;
+    padding-left: 30px;
   }
   .ancor-tags {
-    margin-top: 20px;
-    padding-right: 60px;
+    padding-right: 50px;
+  }
+  .ancor-tags a {
+    padding: 10px 10px;
+  }
+
+  /* Home */
+  .home-heading{
+    padding: 10px 10px;
+  }
+  .font-size
+
+  /* Tabs */
+  @media (max-width: 780px) {
+    #Logo img {
+      height: 60px;
+      width: 60px;
+    }
     .ancor-tags a {
-      color: rgb(75, 38, 20);
-      background-color: ☐ #ffffff6b;
-      border-radius: 10px;
-      text-align: center;
-      text-decoration: none;
-      padding: 12px 20px;
-    }
-  
-    /* Small 1000px */
-    @media (max-width: 1000px) {
-      #Logo img {
-        width: 70px;
-        height: 70px;
-        padding-left: 30px;
-      }
-      .ancor-tags {
-        padding-right: 50px;
-      }
-      .ancor-tags a {
-        padding: 10px 10px;
-      }
-    }
-    /* Tabs */
-    @media (max-width: 780px) {
-      #Logo img {
-        height: 60px; 
-        width: 60px;
-      }
-      .ancor-tags a {
-        font-size: 2px;
-      }
+      font-size: 2px;
     }
   }
-  
-  /*Mobile */
-  @media(max-width: 420px) {
-  #Logo img{ 
-  height: 50px;
-  width: 50px;
-  padding-left: 10px;
+}
+
+/*Mobile */
+@media (max-width: 420px) {
+  #Logo img {
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
   }
-  }
-  .ancor-tags{
+}
+.ancor-tags {
   padding-right: 10px;
-  .ancor-tags a{
-  padding: 5px 5px;
-  font-size: 1.6vh;
+  .ancor-tags a {
+    padding: 5px 5px;
+    font-size: 1.6vh;
   }
-  }
-  
+}
