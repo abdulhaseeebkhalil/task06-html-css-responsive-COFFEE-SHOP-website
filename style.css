@@ -11,10 +11,9 @@
   src: url(./fonts/JosefinSans-VariableFont_wght.ttf);
 }
 body {
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.395) rgba(255, 255, 255, 0.395),
-    url(./assets/images/Coffee\ espresso\ template1.jpg.jpg)
-  );
+  /* background-image: linear-gradient(rgb:) url(./assets/images/Coffee\ espresso\ template1.jpg); */
+
+  background-image: url(./assets/images/Untitled\ design.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -39,7 +38,7 @@ nav {
 }
 .ancor-tags a {
   color: rgb(75, 38, 20);
-  background-color: ☐ #ffffff6b;
+  background-color: #ffffff6b;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -49,57 +48,56 @@ nav {
 /* Home */
 
 .home {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+.home-heading {
+  padding: 150px 70px;
+  font-size: large;
+  font-family: Josefin;
+}
+.home-heading h1 {
+  font-size: 45px;
+}
+h1 em {
+  font-size: 60px;
+  font-style: normal;
+}
+.home-heading p {
+  padding: 5px 0;
+}
+.home-heading button {
+  color: rgb(75, 38, 20);
+  border: 1px solid rgb(75, 38, 20);
+  background-color: transparent;
+  padding: 10px;
+  margin-left: 20%;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.offer {
+  margin-top: -90px;
+  margin-left: -100px;
+}
+.offer img {
+  width: 400px;
+}
+.home-image {
+  width: 400px;
+}
+.home-image {
+  position: relative;
+  animation: move 1s both;
+}
+@keyframes move {
+  from {
+    right: 0;
   }
-  .home-heading {
-    padding: 150px 70px;
-    font-size: large;
-    font-family: Josefin;
+  to {
+    right: 100px;
   }
-  .home-heading h1 {
-    font-size: 45px;
-  }
-  h1 em {
-    font-size: 60px;
-    font-style: normal;
-  }
-  .home-heading p {
-    padding: 5px 0;
-  }
-  .home-heading button {
-    color: rgb(75, 38, 20);
-    border: 1px solid ☐ rgb(75, 38, 20);
-    background-color: transparent;
-    padding: 10px;
-    margin-left: 20%;
-    margin-top: 15px;
-    border-radius: 5px;
-  }
-  
-  .offer {
-    margin-top: -90px;
-    margin-left: -100px;
-  }
-  .offer img {
-    width: 400px;
-  }
-  .home-image {
-    width: 400px;
-  }
-  .home-image {
-    position: relative;
-    animation: move 1s both;
-  }
-  @keyframes move {
-    from {
-      right: 0;
-    }
-    to {
-      right: 100px;
-    }
-  }
-  
+}
 
 /* Small 1000px */
 @media (max-width: 1000px) {
@@ -116,19 +114,91 @@ nav {
   }
 
   /* Home */
-  .home-heading{
-    padding: 10px 10px;
+  .home-heading {
+    padding: 150px 50px;
+    font-size: 2.4vh;
   }
-  .font-size
 
-  /* Tabs */
-  @media (max-width: 780px) {
-    #Logo img {
-      height: 60px;
-      width: 60px;
+  .home-heading h1 {
+    font-size: 35px;
+  }
+
+  h1 em {
+    font-size: 50px;
+  }
+
+  .home-heading button {
+    padding: 8px;
+    margin-top: 8px;
+  }
+  .offer {
+    margin-top: -70px;
+    margin-left: -70px;
+  }
+
+  .offer img {
+    width: 300px;
+  }
+
+  @keyframes move {
+    from {
+      right: 0;
     }
-    .ancor-tags a {
-      font-size: 2px;
+    to {
+      right: 50px;
+    }
+  }
+}
+/* Tabs */
+@media (max-width: 780px) {
+  #Logo img {
+    height: 60px;
+    width: 60px;
+  }
+  .ancor-tags a {
+    font-size: 2.7vh;
+    padding: 5px;
+  }
+
+  /* Home */
+  .home-heading {
+    padding: 100px 20px;
+    font-size: 1.8vh;
+  }
+  .home-heading h1 {
+    font-size: 40px;
+  }
+
+  h1 em {
+    font-size: 40px;
+  }
+  .home-heading img {
+    width: 15px;
+    padding: 5px;
+  }
+  .home-heading p {
+    font-size: small;
+  }
+
+  .home-heading button {
+    padding: 5px;
+  }
+  .offer {
+    margin-top: -70px;
+    margin-left: -70px;
+  }
+  .offer img {
+    width: 300px;
+  }
+  .home-image img {
+    width: 300px;
+  }
+  @keyframes move {
+    from {
+      right: 0;
+    }
+    to {
+      right: 5%;
     }
   }
 }
@@ -140,11 +210,56 @@ nav {
     width: 50px;
     padding-left: 10px;
   }
-}
-.ancor-tags {
-  padding-right: 10px;
+  .ancor-tags {
+    padding-right: 10px;
+  }
   .ancor-tags a {
     padding: 5px 5px;
     font-size: 1.6vh;
+  }
+
+  /* Home */
+  .home-heading {
+    padding: 60px 20px;
+    font-size: 1.8vh;
+  }
+  .home-heading h1 {
+    font-size: 3vh;
+  }
+  h1 em {
+    font-size: 4vh;
+  }
+  .home-heading img {
+    width: 10px;
+    padding: 5px;
+    margin: 8px 0;
+    margin-bottom: 0px;
+  }
+
+  .home-heading p {
+    font-size: small;
+  }
+  .home-heading button {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 1.2vh;
+  }
+  .offer {
+    margin-top: -40px;
+    margin-left: -50px;
+  }
+  .offer img {
+    width: 140px;
+  }
+  .home-image img {
+    width: 200px;
+  }
+  @keyframes move {
+    from {
+      right: 0;
+    }
+    to {
+      right: 5%;
+    }
   }
 }
