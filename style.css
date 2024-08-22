@@ -134,14 +134,14 @@ h1 em {
   text-align: center;
   margin-bottom: 50px;
   background-image: linear-gradient
-      (☐ rgba(0, 0, 0, 0.265), ☐ rgba(0, 0, 0, 0.265)),
+      (rgba(0, 0, 0, 0.265), rgba(0, 0, 0, 0.265)),
     url(./assets/images/back4.jpg);
   background-size: cover;
   color: azure;
   transition: transform 0.5s ease-in 0.09s;
 }
 .coffee-cup:hover {
-  transform: scale (1.1);
+  transform: translateY(-10px);
 }
 .coffee-cup img {
   width: 150px;
@@ -159,6 +159,69 @@ h1 em {
   font-size: 13px;
   padding: 5px;
 }
+
+/* Image-text */
+
+.image-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+  margin-top: 30px;
+}
+
+.image-text img {
+  width: 400px;
+  margin-right: 40px;
+}
+
+.image-text p {
+  font-size: x-large;
+  font-weight: 500px;
+  text-align: justify;
+  margin-right: 30px;
+}
+
+/* Cold Coffee */
+
+.cold-coffee-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.cold-coffee-container .cold-coffee-cup {
+  width: 220px;
+  height: 260px;
+  border: 5px solid white;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: rgba(185, 117, 83, 0.589);
+  transition: transform 0.4s ease-in 0.09s;
+}
+
+.cold-coffee-cup:hover{
+  transform: translateY(-10px);
+}
+
+.cold-coffee-cup img{
+  width: 100px;
+  height: 150px;
+  padding-top: 63px;
+}
+
+.cold-coffee-container .text-body{
+  background-color: #fff;
+  padding: 12px;
+}
+
+.cold-coffee-cup .text-body{
+  font-size: 3vh;
+}
+
+
 
 /* Small 1000px */
 @media (max-width: 1000px) {
@@ -240,6 +303,19 @@ h1 em {
     font-size: 13px;
     padding: 5px;
   }
+
+  /* Image text */
+  .image-text {
+    padding: 20px 20px;
+  }
+  .image-text img {
+    width: 300px;
+    margin-right: 20px;
+  }
+  .image-text p {
+    font-size: 1.5vh;
+    margin-right: 10px;
+  }
 }
 /* Tabs */
 @media (max-width: 780px) {
@@ -292,6 +368,54 @@ h1 em {
     to {
       right: 5%;
     }
+  }
+
+  /* Coffee */
+
+  .coffee-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+  .coffee-container .coffee-cup {
+    width: 150px;
+    height: 150px;
+  }
+  .coffee-container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+  .coffee-container-2 .coffee-cup {
+    width: 150px;
+    height: 150px;
+  }
+  .coffee-cup img {
+    width: 120px;
+    height: 120px;
+  }
+  .coffee-cup h2 {
+    margin-top: -15px;
+  }
+  .coffee-cup p {
+    font-size: 10px;
+    padding: 2px;
+  }
+  .home-image img {
+    width: 250px;
+  }
+
+  /* Image text */
+  .image-text {
+    padding: 10px 10px;
+  }
+  .image-text img {
+    width: 300px;
+    margin-right: 10px;
+  }
+  .image-text p {
+    font-size: 1.2vh;
+    margin-right: 5px;
   }
 }
 
@@ -353,5 +477,18 @@ h1 em {
     to {
       right: 5%;
     }
+  }
+
+  /* Image text */
+  .image-text {
+    padding: 5px 5px;
+  }
+  .image-text img {
+    width: 200px;
+    margin-right: 5px;
+  }
+  .image-text p {
+    font-size: 1vh;
+    margin-right: 3px;
   }
 }
