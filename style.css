@@ -220,6 +220,45 @@ h1 em {
   font-size: 3vh;
 }
 
+/* coffee-ended */
+
+/* beans-started */
+
+.beans-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.beans-container div {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  border: 1px solid burlywood;
+  box-shadow: 2px 2px 10px 10px #553826;
+}
+
+.beans-container img {
+  position: relative;
+  top: -130px;
+  width: 185px;
+}
+
+.beans-container p {
+  margin-top: -150px;
+}
+
+#heading{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+/* beans ended */
+
 /* Small 1000px */
 @media (max-width: 1000px) {
   #Logo img {
@@ -333,6 +372,29 @@ h1 em {
   }
   .cold-coffee-cup .text-body {
     font-size: 1.8vh;
+  }
+
+  /* Beans */
+
+  .beans-container {
+    display: gird;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .beans-container div {
+    width: 250px;
+    height: 250px;
+  }
+  .beans-container img {
+    position: relative;
+    top: -150px;
+    width: 240px;
+  }
+  .beans-container p {
+    margin-top: -180px;
+    font-size: 25px;
   }
 }
 /* Tabs */
@@ -457,7 +519,24 @@ h1 em {
   .cold-coffee-cup .text-body {
     font-size: 1.2vh;
   }
-
+  /* Beans */
+  .beans-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .beans-container div {
+    width: 200px;
+    height: 200px;
+  }
+  .beans-container img {
+    position: relative;
+    top: -150px;
+    width: 180px;
+  }
+  .beans-container p {
+    margin-top: -180px;
+    font-size: 20px;
+  }
 }
 
 /*Mobile */
@@ -586,5 +665,30 @@ h1 em {
   }
   .cold-coffee-cup .text-body {
     font-size: 1vh;
+  }
+  /* Beans */
+  .beans-container {
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    top: 80px;
+  }
+  .beans-container div {
+    width: 250px;
+    height: 250px;
+  }
+  .beans-container img {
+    position: relative;
+    top: -150px;
+    width: 240px;
+  }
+  .beans-container p {
+    margin-top: 1800px;
+    font-size: 20px;
+  }
+  #heading{
+    font-size: 30px;
   }
 }
