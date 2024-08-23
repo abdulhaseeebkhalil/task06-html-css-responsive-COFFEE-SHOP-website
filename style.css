@@ -271,21 +271,21 @@ footer {
   color: #fff;
 }
 
-footer ul{
+footer ul {
   margin-bottom: 20px;
 }
 
-footer h4{
+footer h4 {
   margin-bottom: 20px;
 }
 
 footer ul li {
-  list-style-type : none;
+  list-style-type: none;
   color: #fff;
   padding-top: 5px;
 }
 
-footer a img{
+footer a img {
   width: 20px;
   padding: 5px;
   border-radius: 5px;
@@ -386,27 +386,34 @@ footer a img{
     margin-right: 10px;
   }
   /* Cold Coffee */
+  .coffee-container,
+  .coffee-container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .coffee-container .coffee-cup,
+  .coffee-container-2 .coffee-cup {
+    margin-bottom: 20px;
+  }
+  .image-text {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image-text img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .image-text p {
+    width: 90%;
+    margin: 0 auto;
+  }
   .cold-coffee-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 120px;
-    margin-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
   }
   .cold-coffee-container .cold-coffee-cup {
-    width: 180px;
-    height: 220px;
+    margin-bottom: 20px;
   }
-  .cold-coffee-cup img {
-    width: 90px;
-    height: 130px;
-  }
-  .cold-coffee-container .text-body {
-    font-size: 2.5vh;
-  }
-  .cold-coffee-cup .text-body {
-    font-size: 1.8vh;
-  }
-
   /* Beans */
 
   .beans-container {
@@ -532,30 +539,31 @@ footer a img{
   }
 
   /* Cold Coffee */
-  .cold-coffee-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px;
-    margin-bottom: 40px;
+  .coffee-container,
+  .coffee-container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .coffee-container .coffee-cup,
+  .coffee-container-2 .coffee-cup {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .image-text {
+    padding: 20px;
+  }
+  .image-text img {
+    width: 90%;
   }
   .cold-coffee-container .cold-coffee-cup {
-    width: 130px;
-    height: 170px;
-  }
-  .cold-coffee-cup img {
-    width: 80px;
-    height: 100px;
-  }
-  .cold-coffee-container .text-body {
-    font-size: 1.8vh;
-  }
-  .cold-coffee-cup .text-body {
-    font-size: 1.2vh;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
   }
   /* Beans */
   .beans-container {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25%;
   }
   .beans-container div {
     width: 200px;
@@ -570,6 +578,35 @@ footer a img{
     margin-top: -180px;
     font-size: 20px;
   }
+
+  /* FOOTER */
+  footer {
+    margin-top: 150px;
+    padding-top: 50px;
+  }
+  footer img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  footer ul li {
+    font-size: small;
+  }
+  footer p {
+    font-size: 1.2vh;
+    margin-top: 10px;
+  }
+  footer a {
+    color: #333;
+    font-size: 1.2vh;
+    margin-left: 10px;
+  }
+  footer p:last-child {
+    margin-bottom: 0;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  /* Responsive */
 }
 
 /*Mobile */
@@ -679,25 +716,35 @@ footer a img{
     width: 150px;
   }
   /* Cold Coffee */
-  .cold-coffee-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 40px;
-    margin-bottom: 20px;
+  .coffee-container,
+  .coffee-container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .coffee-container .coffee-cup,
+  .coffee-container-2 .coffee-cup {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .image-text {
+    padding: 10px;
+  }
+  .image-text img {
+    width: 100%;
   }
   .cold-coffee-container .cold-coffee-cup {
-    width: 80px;
-    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
   }
-  .cold-coffee-cup img {
-    width: 60px;
-    height: 60px;
+  .image-text {
+    padding: 10px;
   }
-  .cold-coffee-container .text-body {
-    font-size: 1.2vh;
+  .image-text img {
+    width: 100%;
   }
-  .cold-coffee-cup .text-body {
-    font-size: 1vh;
+  .cold-coffee-container .cold-coffee-cup {
+    width: 100%;
+    margin-bottom: 10px;
   }
   /* Beans */
   .beans-container {
@@ -723,5 +770,31 @@ footer a img{
   }
   #heading {
     font-size: 30px;
+  }
+  footer {
+    margin-top: 100px;
+    padding-top: 30px;
+  }
+  footer img {
+    width: 15px;
+    margin-right: 10px;
+  }
+  footer ul li {
+    font-size: small;
+  }
+  footer p {
+    font-size: 1vh;
+    margin-top: 10px;
+  }
+  footer a {
+    color: #333;
+    font-size: 1vh;
+    margin-left: 10px;
+  }
+  footer p:last-child {
+    margin-bottom: 0;
+  }
+  footer a:hover {
+    text-decoration: underline;
   }
 }
